@@ -4,7 +4,8 @@
         "type": "Brake Cylinders",
         "material": "Aluminum",
         "position": "Front",
-        "minimum-order-quantity": 1,
+        "description": "Original premium quality Brake Cylinder from it's original manufacturer",
+        "minimum_order_quantity": 1,
         "quantity": 6,
         "price": 10,
         "img": "https://i.postimg.cc/3w0MCtkf/Motorcycle-Spare-Parts-Brake-Cylinder-with-Best-Price.jpg"
@@ -14,7 +15,8 @@
         "type": "Suspension",
         "material": "Aluminum",
         "position": "Rear",
-        "minimum-order-quantity": 1,
+        "description": "Great performance. Easy to ride when the suspension is in use",
+        "minimum_order_quantity": 1,
         "quantity": 6,
         "price": 10,
         "img": "https://i.postimg.cc/13pwnQHv/High-Quality-Motorcycle-Center-Shock-Suspension-for-off-Road-Motorcycles-etc.jpg"
@@ -24,7 +26,8 @@
         "type": "Brake Clutch Cylinders",
         "material": "Aluminum",
         "position": "Front",
-        "minimum-order-quantity": 1,
+        "description": "Smooth clutch. Easy to clean. Improved quality",
+        "minimum_order_quantity": 1,
         "quantity": 6,
         "price": 11,
         "img": "https://i.postimg.cc/wxVrNCWT/Motorcycle-Spare-Parts-Accessories-of-Brake-Clutch-Cylinder.jpg"
@@ -34,7 +37,8 @@
         "type": "Brake",
         "material": "Aluminum Alloy",
         "position": "Front",
-        "minimum-order-quantity": 1,
+        "description": "Brake caliper is a must for a bike. This caliper is from brand that has quality building parts",
+        "minimum_order_quantity": 1,
         "quantity": 6,
         "price": 15,
         "img": "https://i.postimg.cc/FzsDGKPF/Class-a-Motorcycle-Spare-Parts-Brake-Caliper.jpg"
@@ -44,7 +48,8 @@
         "type": "Brake Pads",
         "material": "Semi-Metal",
         "position": "Back",
-        "minimum-order-quantity": 1,
+        "description": "Brake pads are strong and maintained quality. Can use it for a long time",
+        "minimum_order_quantity": 1,
         "quantity": 6,
         "price": 4,
         "img": "https://i.postimg.cc/G37Qdd7Y/Motorcycle-Spare-Parts-Titan-150-Titan160-Motorcycle-Brake-Pads.jpg"
@@ -54,7 +59,8 @@
         "type": "Brake Disc",
         "material": "Steel",
         "position": "Front",
-        "minimum-order-quantity": 1,
+        "description": "This brake is from Honda. So the quality is not compromised. Comfortable to use",
+        "minimum_order_quantity": 1,
         "quantity": 6,
         "price": 10,
         "img": "https://i.postimg.cc/qRm8JxL0/Honda-Motorcycle-Spare-Parts-Brake-Disc-for-Falcon-Motorcycle.jpg"

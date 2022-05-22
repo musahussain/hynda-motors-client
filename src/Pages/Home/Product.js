@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Product = ({pd}) => {
-    const {name, img, type, material, position, price, _id} = pd;
+    const {name, description, minimum_order_quantity, quantity, img, type, material, position, price, _id} = pd;
     const navigate = useNavigate();
     
     const navigatePurchase = _id => {
@@ -20,6 +20,9 @@ const Product = ({pd}) => {
       </figure>
       <div className="card-body items-center text-center">
         <h2 className="card-title">{name}</h2>
+        <p><span className="font-bold">Description:</span> {description}</p>
+        <p><span className="font-bold">Minimum Order Quantity:</span> {minimum_order_quantity}</p>
+        <p><span className="font-bold">Quantity:</span> {quantity}</p>
         <p><span className="font-bold">Type:</span> {type}</p>
         <p><span className="font-bold">Material:</span> {material}</p>
         <p><span className="font-bold">Position:</span> {position}</p>
