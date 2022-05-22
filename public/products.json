@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Motorcycle Spare Parts Brake Cylinder",
+        "type": "Brake Cylinders",
+        "material": "Aluminum",
+        "position": "Front",
+        "price": 10,
+        "img": "https://i.postimg.cc/3w0MCtkf/Motorcycle-Spare-Parts-Brake-Cylinder-with-Best-Price.jpg"
+    },
+    {
+        "name": "Center Shock Suspension",
+        "type": "Suspension",
+        "material": "Aluminum",
+        "position": "Rear",
+        "price": 10,
+        "img": "https://i.postimg.cc/13pwnQHv/High-Quality-Motorcycle-Center-Shock-Suspension-for-off-Road-Motorcycles-etc.jpg"
+    },
+    {
+        "name": "Accessories of Brake Clutch Cylinder",
+        "type": "Brake Clutch Cylinders",
+        "material": "Aluminum",
+        "position": "Front",
+        "price": 11,
+        "img": "https://i.postimg.cc/wxVrNCWT/Motorcycle-Spare-Parts-Accessories-of-Brake-Clutch-Cylinder.jpg"
+    },
+    {
+        "name": "Motorcycle Spare Parts Brake Caliper",
+        "type": "Brake",
+        "material": "Aluminum Alloy",
+        "position": "Front",
+        "price": 15,
+        "img": "https://i.postimg.cc/FzsDGKPF/Class-a-Motorcycle-Spare-Parts-Brake-Caliper.jpg"
+    },
+    {
+        "name": "Titan160 Motorcycle Brake Pads",
+        "type": "Brake Pads",
+        "material": "Semi-Metal",
+        "position": "Back",
+        "price": 4,
+        "img": "https://i.postimg.cc/G37Qdd7Y/Motorcycle-Spare-Parts-Titan-150-Titan160-Motorcycle-Brake-Pads.jpg"
+    },
+    {
+        "name": "Honda Brake Disc for Falcon Motorcycle",
+        "type": "Brake Disc",
+        "material": "Steel",
+        "position": "Front",
+        "price": 10,
+        "img": "https://i.postimg.cc/qRm8JxL0/Honda-Motorcycle-Spare-Parts-Brake-Disc-for-Falcon-Motorcycle.jpg"
+    }
+]
