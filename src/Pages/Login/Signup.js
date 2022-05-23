@@ -37,7 +37,7 @@ const Signup = () => {
         return;
       }
         await createUserWithEmailAndPassword(email, password);
-        await updateProfile({name});
+        await updateProfile({displayName: name});
     }
 
     const loginGoogle = () => {

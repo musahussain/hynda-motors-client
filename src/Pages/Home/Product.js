@@ -20,13 +20,11 @@ const Product = ({pd}) => {
       </figure>
       <div className="card-body items-center text-center">
         <h2 className="card-title">{name}</h2>
-        <p><span className="font-bold">Description:</span> {description}</p>
-        <p><span className="font-bold">Minimum Order Quantity:</span> {minimum_order_quantity}</p>
         <p><span className="font-bold">Quantity:</span> {quantity}</p>
         <p><span className="font-bold">Type:</span> {type}</p>
         <p><span className="font-bold">Material:</span> {material}</p>
         <p><span className="font-bold">Position:</span> {position}</p>
-        <p><span className="font-bold">Price:</span> {price}</p>
+        <p><span className="font-bold">Price:</span> ${price}</p>
         <div className="card-actions">
           <button onClick={() => navigatePurchase(_id)} className="btn btn-primary text-white">Buy Now</button>
         </div>

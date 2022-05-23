@@ -15,7 +15,7 @@ const Products = () => {
                     slicedProducts.map(pd => <Product key={pd._id} pd={pd}></Product>)
                 }
                 {
-                    (products.length === 0) && <Loading></Loading>
+                    (products.length === 0) && <div className='lg:ml-[600px]'><Loading></Loading></div>
                 }
             </div>
         </div>
