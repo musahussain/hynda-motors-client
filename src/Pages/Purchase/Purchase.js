@@ -8,12 +8,12 @@ const Purchase = () => {
   const {img, name, type, material, position, description, minimum_order_quantity, quantity, price, _id} = product;
 
   return (
-    <div class="card lg:card-side bg-base-100 shadow-xl">
+    <div className="card lg:card-side bg-base-100 shadow-xl">
       <figure>
         <img src={img} alt="Album" />
       </figure>
-      <div class="card-body">
-        <h2 class="card-title">{name}</h2>
+      <div className="card-body">
+        <h2 className="card-title">{name}</h2>
         <p>{description}</p>
         <p><span className="font-bold">Type: </span>{type}</p>
         <p><span className="font-bold">Material: </span>{material}</p>
@@ -21,8 +21,8 @@ const Purchase = () => {
         <p><span className="font-bold">Minimum Order Quantity: </span>{minimum_order_quantity}</p>
         <p><span className="font-bold">Quantity: </span>{quantity}</p>
         <p><span className="font-bold">Price: </span>{price}</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary text-white">Continue To Checkout</button>
+        <div className="card-actions justify-end">
+          <button className="btn btn-primary text-white">Continue To Checkout</button>
         </div>
       </div>
     </div>

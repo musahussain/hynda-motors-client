@@ -1,7 +1,6 @@
 import React from "react";
 
 const Banner = () => {
-    console.log(process.env.API_KEY)
   return (
     <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row">

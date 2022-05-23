@@ -7,11 +7,11 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBxoGkIEfWJk_7VyVaTZ8qOryq3skXWbug",
-    authDomain: process.env.AUTH_DOMAIN,
-    projectId: process.env.PROJECT_ID,
-    storageBucket: process.env.STORAGE_BUCKET,
-    messagingSenderId: process.env.MESSAGING_SENDER_ID,
-    appId: process.env.APP_ID
+    authDomain: "hynda-motors-25ea3.firebaseapp.com",
+    projectId: "hynda-motors-25ea3",
+    storageBucket: "hynda-motors-25ea3.appspot.com",
+    messagingSenderId: "963133366864",
+    appId: "1:963133366864:web:cb61b9e7fe15474e056755"
 };
 
 // Initialize Firebase
