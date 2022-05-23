@@ -77,7 +77,7 @@ const Header = () => {
       </div>
       <div className="navbar-end">
         {user ? (
-          <button onClick={logout} className="btn btn-ghost">
+          <button onClick={logout} className="btn btn-primary text-white">
             Sign Out
           </button>
         ) : (
