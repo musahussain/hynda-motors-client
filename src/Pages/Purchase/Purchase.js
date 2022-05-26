@@ -41,7 +41,7 @@ const Purchase = () => {
       productId,
     };
 
-    const url = `http://localhost:5000/order`;
+    const url = `https://boiling-mountain-76234.herokuapp.com/order`;
     fetch(url, {
       method: "POST",
       headers: {
