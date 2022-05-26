@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -31,12 +31,16 @@ const Purchase = () => {
     const userName = event.target?.username.value;
     const emailAddress = event.target.email.value;
     const phone = event.target.phone.value;
-    const quantity = event.target.quantity.value;
+    const orderQuantity = event.target.quantity.value;
+    if(orderQuantity < minimum_order_quantity || orderQuantity > quantity) {
+      toast.error(`Purchase Qunatity can't be less than ${minimum_order_quantity} and can't be more than ${quantity}`);
+      return;
+    } 
     const order = {
       name: userName,
       email: emailAddress,
       phone,
-      quantity,
+      quantity: orderQuantity,
       productName: product.name,
       productId,
     };
