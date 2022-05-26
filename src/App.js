@@ -15,6 +15,7 @@ import Blog from "./Pages/Blog/Blog";
 import MyProfile from "./Pages/Dashboard/MyProfile";
 import MyOrders from "./Pages/Dashboard/MyOrders";
 import AddReview from "./Pages/Dashboard/AddReview";
+import MyPortfolio from "./Pages/MyPortfolio/MyPortfolio";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="addreview" element={<AddReview></AddReview>}></Route>
         </Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
+        <Route path="/myportfolio" element={<MyPortfolio></MyPortfolio>}></Route>
       </Routes>
       <ToastContainer></ToastContainer>
       <Footer></Footer>

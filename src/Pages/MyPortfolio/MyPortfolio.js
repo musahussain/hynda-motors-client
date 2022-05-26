@@ -1,0 +1,85 @@
+import React from "react";
+
+const MyPortfolio = () => {
+  return (
+    <div>
+      <h1 className="text-center text-4xl text-primary mt-12">My Portfolio</h1>
+      <div className="flex justify-center items-center flex-col">
+        <div class="card w-96 bg-base-100 shadow-xl mt-12">
+          <figure>
+            <div class="avatar placeholder">
+              <div class="bg-neutral-focus text-neutral-content rounded-full w-24">
+                <span class="text-3xl">M</span>
+              </div>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">I am Muslim Hussain</h2>
+            <p>
+              <span className="font-bold">Email: </span>
+              mdmuslimhussain1@gmail.com
+            </p>
+            <p>
+              <span className="font-bold">Educational Background: </span>
+              Studying in College. Inter first year.
+            </p>
+
+            <p>
+              <span className="font-bold">Technologies I can use: </span>React,
+              JavaScript, Node.js, MongoDb, Firebase, Heroku, Express.js
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://i.postimg.cc/BZ88FJL0/insta-photo-img.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Insta Photo</h2>
+              <div class="card-actions justify-end">
+                <a href="https://insta-photo-5231d.web.app/"  class="btn btn-primary text-white">Live Website</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://i.postimg.cc/prP1gsnQ/tronic.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Tronic</h2>
+              <div class="card-actions justify-end">
+                <a href="https://warehouse-887f5.web.app/" class="btn btn-primary text-white">Live Website</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://i.postimg.cc/x17jnz5N/spiral.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Spiral</h2>
+              <div class="card-actions justify-end">
+                <a href="https://spiral-review.netlify.app/" class="btn btn-primary text-white">Live Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MyPortfolio;
