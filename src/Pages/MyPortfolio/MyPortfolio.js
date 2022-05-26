@@ -70,7 +70,7 @@ const MyPortfolio = () => {
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Spiral</h2>
+              <h2 className="card-title">Spiral</h2>
               <div class="card-actions justify-end">
                 <a href="https://spiral-review.netlify.app/" class="btn btn-primary text-white">Live Website</a>
               </div>
