@@ -12,6 +12,9 @@ import Signup from "./Pages/Login/Signup";
 import Footer from "./Pages/SharedComponent/Footer";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Blog from "./Pages/Blog/Blog";
+import MyProfile from "./Pages/Dashboard/MyProfile";
+import MyOrders from "./Pages/Dashboard/MyOrders";
+import AddReview from "./Pages/Dashboard/AddReview";
 
 function App() {
   return (
@@ -32,7 +35,11 @@ function App() {
         <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path="/dashboard" element={<RequireAuth>
           <Dashboard></Dashboard>
-        </RequireAuth>}></Route>
+        </RequireAuth>}>
+          <Route index element={<MyProfile></MyProfile>}></Route>
+          <Route path="myorders" element={<MyOrders></MyOrders>}></Route>
+          <Route path="addreview" element={<AddReview></AddReview>}></Route>
+        </Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
       </Routes>
       <ToastContainer></ToastContainer>

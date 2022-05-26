@@ -35,7 +35,7 @@ const Purchase = () => {
     if(orderQuantity < minimum_order_quantity || orderQuantity > quantity) {
       toast.error(`Purchase Qunatity can't be less than ${minimum_order_quantity} and can't be more than ${quantity}`);
       return;
-    } 
+    }
     const order = {
       name: userName,
       email: emailAddress,
@@ -43,6 +43,7 @@ const Purchase = () => {
       quantity: orderQuantity,
       productName: product.name,
       productId,
+      status: 'unpaid'
     };
 
     const url = `https://boiling-mountain-76234.herokuapp.com/order`;
@@ -186,7 +187,7 @@ const Purchase = () => {
                   <input
                 class="btn mt-5"
                 type="submit"
-                value="Continue To Checkout"
+                value="Confirm Order"
               />
                 </label>
               </form>
