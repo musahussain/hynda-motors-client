@@ -5,7 +5,7 @@ const ContactUs = () => {
     <div class="hero min-h-screen">
       <div class="hero-content flex-col lg:flex-row-reverse">
         <div class="text-center lg:text-left">
-          <img className="rounded" src="https://i.postimg.cc/PJKrj8L9/contact.png" alt="contact" />
+          <img className="rounded" src="https://i.postimg.cc/j52r7kCg/contact-removebg-preview.png" alt="contact" />
         </div>
         <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div class="card-body">
@@ -43,7 +43,7 @@ const ContactUs = () => {
               
             </div>
             <div class="form-control mt-6">
-              <button class="btn btn-primary">Contact</button>
+              <button class="btn btn-primary text-white">Contact</button>
             </div>
           </div>
         </div>
