@@ -30,6 +30,9 @@ const Header = () => {
         <Link to="/dashboard">Dashboard</Link>
       </li>
       }
+      {
+        user && <li className="text-lg mt-3">Username: {user?.displayName}</li>
+      }
     </>
   );
 
@@ -77,9 +80,11 @@ const Header = () => {
       </div>
       <div className="navbar-end">
         {user ? (
-          <button onClick={logout} className="btn btn-primary text-white">
+          <>
+            <button onClick={logout} className="btn btn-primary text-white">
             Sign Out
           </button>
+          </>
         ) : (
           <Link to="/login" className="btn btn-primary text-white">
             Login

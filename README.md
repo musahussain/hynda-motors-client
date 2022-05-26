@@ -2,6 +2,27 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Hynda Motors 
+
+### This is a parts manufacturer company Website. You will find Bike parts in this website. 
+
+[Live Site](https://hynda-motors-25ea3.web.app/).
+
+### Features
+
+* You can create an account and order 
+* See details about bike parts
+* You can see your orders in My Orders page
+* You can add a review
+* You can see your information on My Profile page
+
+### Technology Used
+
+* React
+* React-Router
+* Firebase
+* Tailwind
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,6 +1,7 @@
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 import auth from "../../firebase.init";
 import useProduct from "../../Hooks/useProduct";
 import Loading from "../SharedComponent/Loading";
@@ -24,6 +25,39 @@ const Purchase = () => {
   if (product === {}) {
     return <Loading></Loading>;
   }
+
+  const addOrder = (event) => {
+    event.preventDefault();
+    const userName = event.target?.username.value;
+    const emailAddress = event.target.email.value;
+    const phone = event.target.phone.value;
+    const quantity = event.target.quantity.value;
+    const order = {
+      name: userName,
+      email: emailAddress,
+      phone,
+      quantity,
+      productName: product.name,
+      productId,
+    };
+
+    const url = `http://localhost:5000/order`;
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(order),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if(data.acknowledged) {
+          toast(`Your Order for ${order.productName} was Successfull`);
+        } else {
+          toast.error(`Your Order for ${order.productName} was failed`);
+        }
+      });
+  };
 
   return (
     <div>
@@ -51,12 +85,11 @@ const Purchase = () => {
             {minimum_order_quantity}
           </p>
           <p>
-            <span className="font-bold">Quantity: </span>
+            <span className="font-bold">Available Quantity: </span>
             {quantity}
           </p>
           <p>
-            <span className="font-bold">Price: </span>
-            ${price}
+            <span className="font-bold">Price: </span>${price}
           </p>
           <div className="card-actions justify-end">
             <label for="my-modal-3" class="btn modal-button">
@@ -78,56 +111,82 @@ const Purchase = () => {
           <h3 class="text-lg font-bold">Buy: {name}</h3>
           <div className="flex justify-center items-center mx-auto mt-6">
             <div id="purchase-form">
-              <p className="mt-3"> 
+              <p className="mt-3">
                 <span className="font-bold">Type: </span>
                 {type}
               </p>
-              
+
               <p className="mt-3">
-                <span className="font-bold">Price: </span>$
-                {price}
+                <span className="font-bold">Price: </span>${price}
               </p>
 
-              <div class="form-control w-full max-w-xs mt-6">
-                <label class="label">
-                  <span class="label-text">Username</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter Your Name"
-                  value={user?.displayName}
-                  disabled
-                  class="input input-bordered w-full max-w-xs"
-                />
-              
-              </div>
+              <form onSubmit={addOrder}>
+                <div class="form-control w-full max-w-xs mt-6">
+                  <label class="label">
+                    <span class="label-text">Username</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="Enter Your Name"
+                    value={user?.displayName}
+                    disabled
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </div>
 
-              <div class="form-control w-full max-w-xs mt-6">
-                <label class="label">
-                  <span class="label-text">Email Address</span>
-                </label>
-                <input
-                  type="email"
-                  value={user?.email}
-                  disabled
-                  placeholder="Enter Email"
-                  class="input input-bordered w-full max-w-xs"
-                />
-              
-              </div>
+                <div class="form-control w-full max-w-xs mt-6">
+                  <label class="label">
+                    <span class="label-text">Email Address</span>
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={user?.email}
+                    disabled
+                    placeholder="Enter Email"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </div>
 
-              <div class="form-control w-full max-w-xs mt-6">
-                <label class="label">
-                  <span class="label-text">Purchase Quantity</span>
+                <div class="form-control w-full max-w-xs mt-6">
+                  <label class="label">
+                    <span class="label-text">Phone Number</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Enter Phone Number"
+                    class="input input-bordered w-full max-w-xs"
+                    required
+                  />
+                </div>
+
+                <div class="form-control w-full max-w-xs mt-6">
+                  <label class="label">
+                    <span class="label-text">Purchase Quantity</span>
+                  </label>
+                  <input
+                    type="number"
+                    name="quantity"
+                    placeholder="Enter quantity"
+                    class="input input-bordered w-full max-w-xs"
+                    required
+                  />
+                </div>
+
+                <label
+                  for="my-modal-3"
+                  
+                >
+                  <input
+                class="btn mt-5"
+                type="submit"
+                value="Continue To Checkout"
+              />
                 </label>
-                <input
-                  type="number"
-                  placeholder="Enter quantity"
-                  class="input input-bordered w-full max-w-xs"
-                />
+              </form>
               
-              </div>
-              <button class="btn mt-5">Continue To Checkout</button>
             </div>
           </div>
         </div>
