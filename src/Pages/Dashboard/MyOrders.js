@@ -11,7 +11,7 @@ const MyOrders = () => {
   const userEmail = user.email;
 
   useEffect(() => {
-    const url = `http://localhost:5000/order/${userEmail}`;
+    const url = `https://boiling-mountain-76234.herokuapp.com/order/${userEmail}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setOrders(data));
@@ -22,7 +22,7 @@ const MyOrders = () => {
   };
 
   const deleteOrder = () => {
-    const url = `http://localhost:5000/order/${deleteId}`;
+    const url = `https://boiling-mountain-76234.herokuapp.com/order/${deleteId}`;
     fetch(url, {
       method: "DELETE",
     })
@@ -43,8 +43,8 @@ const MyOrders = () => {
   return (
     <div>
       <h1 className="text-3xl mt-6 mb-6">My Orders: {orders.length}</h1>
-      <div class="overflow-x-auto">
-        <table class="table w-full">
+      <div className="overflow-x-auto">
+        <table className="table w-full">
           <thead>
             <tr>
               <th></th>
@@ -61,7 +61,7 @@ const MyOrders = () => {
                 <td>{order.quantity}</td>
                 <td>{order.status}</td>
                 <td onClick={() => deleteItem(order._id)}>
-                  <label for="my-modal-3" class="btn modal-button">
+                  <label htmlFor="my-modal-3" className="btn modal-button">
                     Cancel
                   </label>
                 </td>
@@ -70,16 +70,16 @@ const MyOrders = () => {
           </tbody>
         </table>
 
-        <input type="checkbox" id="my-modal-3" class="modal-toggle" />
-        <div class="modal">
-          <div class="modal-box relative">
+        <input type="checkbox" id="my-modal-3" className="modal-toggle" />
+        <div className="modal">
+          <div className="modal-box relative">
             <label
-              for="my-modal-3"
-              class="btn btn-sm btn-circle absolute right-2 top-2"
+              htmlFor="my-modal-3"
+              className="btn btn-sm btn-circle absolute right-2 top-2"
             >
               ✕
             </label>
-            <h3 class="text-lg font-bold">Are you sure you want to delete?</h3>
+            <h3 className="text-lg font-bold">Are you sure you want to delete?</h3>
             <button onClick={deleteOrder} className="btn">
               Confirm
             </button>

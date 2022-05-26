@@ -63,17 +63,17 @@ const Signup = () => {
     }
 
     return (
-        <div class="hero min-h-screen">
-      <div class="hero-content flex-col lg:flex-row-reverse">
-        <div class="text-center lg:text-left">
-          <h1 class="text-5xl font-bold mt-36 lg:mt-0">Sign Up </h1>
+        <div className="hero min-h-screen">
+      <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="text-center lg:text-left">
+          <h1 className="text-5xl font-bold mt-36 lg:mt-0">Sign Up </h1>
           <img className="mt-40" src="https://i.postimg.cc/90h6nvxM/login-image.png" alt="login banner" />
         </div>
-        <div class="card mt-36 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <div class="card-body">
-          <div class="form-control">
-              <label class="label">
-                <span class="label-text">Name</span>
+        <div className="card mt-36 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card-body">
+          <div className="form-control">
+              <label className="label">
+                <span className="label-text">Name</span>
               </label>
               <input
                 name="name"
@@ -81,13 +81,13 @@ const Signup = () => {
                 value={name}
                 onChange={event => setName(event.target.value)}
                 placeholder="Name"
-                class="input input-bordered"
+                className="input input-bordered"
                 required
               />
             </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Email</span>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Email</span>
               </label>
               <input
                 name="email"
@@ -95,13 +95,13 @@ const Signup = () => {
                 value={email}
                 onChange={event => setEmail(event.target.value)}
                 placeholder="Email"
-                class="input input-bordered"
+                className="input input-bordered"
                 required
               />
             </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Password</span>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Password</span>
               </label>
               <input
                 name="password"
@@ -109,23 +109,23 @@ const Signup = () => {
                 value={password}
                 onChange={event => setPassword(event.target.value)}
                 placeholder="Password"
-                class="input input-bordered"
+                className="input input-bordered"
                 required
               />
               
             </div>
-            <div class="form-control mt-6">
-              <button onClick={signup} class="btn btn-primary text-white">Sign Up</button>
+            <div className="form-control mt-6">
+              <button onClick={signup} className="btn btn-primary text-white">Sign Up</button>
             </div>
-            <label class="label">
-                <Link to="/login" class="label-text-alt link link-hover">
+            <label className="label">
+                <Link to="/login" className="label-text-alt link link-hover">
                 Already Have an Account? Login
                 </Link>
               </label>
               <p><small className="text-red-600">{error?.message || googleError?.message || loginError}</small></p>
             {/* divider  */}
-            <div class="divider">OR</div>
-            <button onClick={loginGoogle} class="btn btn-neutral">Continue With Google</button>
+            <div className="divider">OR</div>
+            <button onClick={loginGoogle} className="btn btn-neutral">Continue With Google</button>
           </div>
         </div>
       </div>

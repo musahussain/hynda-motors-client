@@ -97,23 +97,23 @@ const Purchase = () => {
             <span className="font-bold">Price: </span>${price}
           </p>
           <div className="card-actions justify-end">
-            <label for="my-modal-3" class="btn modal-button">
+            <label htmlFor="my-modal-3" className="btn modal-button">
               Buy
             </label>
           </div>
         </div>
       </div>
 
-      <input type="checkbox" id="my-modal-3" class="modal-toggle" />
-      <div class="modal">
-        <div class="modal-box relative">
+      <input type="checkbox" id="my-modal-3" className="modal-toggle" />
+      <div className="modal">
+        <div className="modal-box relative">
           <label
-            for="my-modal-3"
-            class="btn btn-sm btn-circle absolute right-2 top-2"
+            htmlFor="my-modal-3"
+            className="btn btn-sm btn-circle absolute right-2 top-2"
           >
             ✕
           </label>
-          <h3 class="text-lg font-bold">Buy: {name}</h3>
+          <h3 className="text-lg font-bold">Buy: {name}</h3>
           <div className="flex justify-center items-center mx-auto mt-6">
             <div id="purchase-form">
               <p className="mt-3">
@@ -126,9 +126,9 @@ const Purchase = () => {
               </p>
 
               <form onSubmit={addOrder}>
-                <div class="form-control w-full max-w-xs mt-6">
-                  <label class="label">
-                    <span class="label-text">Username</span>
+                <div className="form-control w-full max-w-xs mt-6">
+                  <label className="label">
+                    <span className="label-text">Username</span>
                   </label>
                   <input
                     type="text"
@@ -136,13 +136,13 @@ const Purchase = () => {
                     placeholder="Enter Your Name"
                     value={user?.displayName}
                     disabled
-                    class="input input-bordered w-full max-w-xs"
+                    className="input input-bordered w-full max-w-xs"
                   />
                 </div>
 
-                <div class="form-control w-full max-w-xs mt-6">
-                  <label class="label">
-                    <span class="label-text">Email Address</span>
+                <div className="form-control w-full max-w-xs mt-6">
+                  <label className="label">
+                    <span className="label-text">Email Address</span>
                   </label>
                   <input
                     type="email"
@@ -150,42 +150,42 @@ const Purchase = () => {
                     value={user?.email}
                     disabled
                     placeholder="Enter Email"
-                    class="input input-bordered w-full max-w-xs"
+                    className="input input-bordered w-full max-w-xs"
                   />
                 </div>
 
-                <div class="form-control w-full max-w-xs mt-6">
-                  <label class="label">
-                    <span class="label-text">Phone Number</span>
+                <div className="form-control w-full max-w-xs mt-6">
+                  <label className="label">
+                    <span className="label-text">Phone Number</span>
                   </label>
                   <input
                     type="text"
                     name="phone"
                     placeholder="Enter Phone Number"
-                    class="input input-bordered w-full max-w-xs"
+                    className="input input-bordered w-full max-w-xs"
                     required
                   />
                 </div>
 
-                <div class="form-control w-full max-w-xs mt-6">
-                  <label class="label">
-                    <span class="label-text">Purchase Quantity</span>
+                <div className="form-control w-full max-w-xs mt-6">
+                  <label className="label">
+                    <span className="label-text">Purchase Quantity</span>
                   </label>
                   <input
                     type="number"
                     name="quantity"
                     placeholder="Enter quantity"
-                    class="input input-bordered w-full max-w-xs"
+                    className="input input-bordered w-full max-w-xs"
                     required
                   />
                 </div>
 
                 <label
-                  for="my-modal-3"
+                  htmlFor="my-modal-3"
                   
                 >
                   <input
-                class="btn mt-5"
+                className="btn mt-5"
                 type="submit"
                 value="Confirm Order"
               />

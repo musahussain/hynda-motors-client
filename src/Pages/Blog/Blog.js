@@ -3,15 +3,15 @@ import React from "react";
 const Blog = () => {
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-36">
-      <div class="card bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-xl">
         <figure>
           <img
             src="https://i.postimg.cc/RF84LXLG/react-performance.jpg"
             alt=""
           />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">
+        <div className="card-body">
+          <h2 className="card-title">
             How will you improve the performance of a React Application?
           </h2>
           <p>
@@ -23,15 +23,15 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div class="card bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-xl">
         <figure>
           <img
             src="https://i.postimg.cc/Y9kpSbzs/react-state.png"
             alt=""
           />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">
+        <div className="card-body">
+          <h2 className="card-title">
           What are the different ways to manage a state in a React application?
           </h2>
           <p>
@@ -39,15 +39,15 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div class="card bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-xl">
         <figure>
           <img
             src="https://i.postimg.cc/ZnNQGh1B/prototypical.png"
             alt=""
           />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">
+        <div className="card-body">
+          <h2 className="card-title">
           How does prototypical inheritance work?
           </h2>
           <p>
@@ -56,15 +56,15 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div class="card bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-xl">
         <figure>
           <img
             src="https://i.postimg.cc/DZrj6csL/react.png"
             alt=""
           />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">
+        <div className="card-body">
+          <h2 className="card-title">
           Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts
           </h2>
           <p>
@@ -72,15 +72,15 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div class="card bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-xl">
         <figure>
           <img
             src="https://i.postimg.cc/PrTxSrGw/array.png"
             alt=""
           />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">
+        <div className="card-body">
+          <h2 className="card-title">
           You have an array of products. Each product has a name, price, description, etc. How will you implement a search to find products by name?
           </h2>
           <p>
@@ -88,15 +88,15 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div class="card bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-xl">
         <figure>
           <img
             src="https://i.postimg.cc/pX3nqMZb/unittest.jpg"
             alt=""
           />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">
+        <div className="card-body">
+          <h2 className="card-title">
           What is a unit test? Why should write unit tests?
           </h2>
           <p>

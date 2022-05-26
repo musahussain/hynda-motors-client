@@ -27,7 +27,7 @@ const AddReview = () => {
         };
 
 
-        const url = `http://localhost:5000/addreview`;
+        const url = `https://boiling-mountain-76234.herokuapp.com/addreview`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -46,32 +46,32 @@ const AddReview = () => {
     <div>
       <h1 className="text-3xl mt-6">Add A Review</h1>
       <div className="flex justify-center items-center">
-        <div class="card w-96 bg-base-100 shadow-xl">
-          <div class="card-body">
+        <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card-body">
             <form onSubmit={handleSubmit(addReview)}>
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
-                <span class="label-text">Product Name</span>
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
+                <span className="label-text">Product Name</span>
               </label>
               <input
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
                 placeholder='Product Name' {...register("productName", { required: true, maxLength: 90 })}
               />
             </div>
 
             
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
-                <span class="label-text">Your Rating for the Review</span>
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
+                <span className="label-text">Your Rating for the Review</span>
               </label>
               <input className="input input-bordered w-full max-w-xs" placeholder='Rating' type="number" {...register("rating")} />
             </div>
 
             <p>Your Review</p>
-            <textarea name="reviewText" class="textarea textarea-bordered" placeholder='Add Review' {...register("reviewText")}></textarea>
-            <div class="card-actions justify-center">
-            <input type='reset' value='Reset' class="btn btn-primary text-white" />
-              <input type='submit' value='Add Review' class="btn btn-primary text-white" />
+            <textarea name="reviewText" className="textarea textarea-bordered" placeholder='Add Review' {...register("reviewText")}></textarea>
+            <div className="card-actions justify-center">
+            <input type='reset' value='Reset' className="btn btn-primary text-white" />
+              <input type='submit' value='Add Review' className="btn btn-primary text-white" />
             </div>
             </form>
           </div>
